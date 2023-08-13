@@ -3,6 +3,6 @@
 
 <h2>Contributors</h2>
 <ul>
-<li>Professor Krasso</li>
-<li>Jennifer Hoitenga</li>
+<li>Richard Krasso</li>
+<li>Michael Christman</li>
 </ul>
