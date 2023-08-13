@@ -1,7 +1,7 @@
 /**
  * Title: person.interface.ts
- * Author: Jennifer Hoitenga
- * Date: August 7, 2023
+ * Author: Michael Christman
+ * Date: August 13th, 2023
  * Sources Used:
  * TypesScript Tutorial for Beginners video by Professor Krasso
  */
