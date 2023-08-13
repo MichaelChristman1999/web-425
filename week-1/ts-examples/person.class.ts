@@ -1,7 +1,7 @@
 /**
  * Title: person.class.ts
- * Author: Jennifer Hoitenga
- * Date: August 7, 2023
+ * Author: Michael Christman
+ * Date: August 13th, 2023
  * Sources Used:
  * TypesScript Tutorial for Beginners video by Professor Krasso
  */
@@ -18,5 +18,5 @@ class Person implements IPerson {
   }
 }
 
-let myName = new Person('Jennifer', 'Hoitenga');
+let myName = new Person('Michael', 'Christman');
 console.log(`My name is ${myName.firstName} ${myName.lastName}`);
