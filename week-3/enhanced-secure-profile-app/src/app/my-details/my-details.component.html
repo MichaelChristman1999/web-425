@@ -1,0 +1,30 @@
+<!--
+ * Title: my-details.component.html
+ * Author: Michael Christman
+ * Date: August 24, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: How to Add Routing video by Professor Krasso (https://www.youtube.com/watch?v=2nuUKwyaCzU)
+ * Angular Tutorial for Beginners: How to Create a Sign-In Form video by Professor Krasso (https://www.youtube.com/watch?v=jBcIjOtctIY)
+ * Angular Tutorial for Beginners: How to How to Pass Data to Components Using Query Params by Professor Krasso (https://www.youtube.com/watch?v=PDWE7R9ABcA)
+-->
+
+<!--An unordered Bootstrap list of my details-->
+<ul class="list-group">
+  <!-- Displaying the my full name using data from the 'myProfile' object. -->
+  <li class="list-group-item">Name: {{ myProfile.fullName }}</li>
+
+  <!-- Displaying the my favorite food using data from the 'myProfile' object. -->
+  <li class="list-group-item">Favorite Food: {{ myProfile.favoriteFood }}</li>
+
+  <!-- Displaying the my favorite color using data from the 'myProfile' object. -->
+  <li class="list-group-item">Favorite Color: {{ myProfile.favoriteColor }}</li>
+
+  <!-- Displaying a list of keywords associated with the my profile. -->
+  <li class="list-group-item">
+    Keywords:
+    <!-- Using an Angular directive to iterate through the 'keywords' array within the 'myProfile' object. -->
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word }}
+    </span>
+  </li>
+</ul>
