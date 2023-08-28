@@ -1,1 +1,33 @@
-<p>composer-list works!</p>
+<!--
+ * Title: composer-list.component.html
+ * Author: Michael Christman
+ * Date: August 17, 2023
+ * Description: This is the "composer-list" component HTML code  for the composer app project.
+ * Sources Used:
+ * Angular Tutorial for Beginners video by Professor Krasso
+ * Angular Tutorial - Data Binding & *ng Directives by Professor Krasso
+ * Bootstrap: https://getbootstrap.com/
+ *-->
+
+<!--I created a table to hold the composer information.-->
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <br /><br />
+        <tr>
+          <th scope="col">Full name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+
+      <!--Looping over the array of composers and outputting the results to a Bootstrap table.-->
+      <tbody *ngFor="let composer of composers">
+        <tr>
+          <td scope="row">{{ composer.fullName }}</td>
+          <td scope="row">{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
