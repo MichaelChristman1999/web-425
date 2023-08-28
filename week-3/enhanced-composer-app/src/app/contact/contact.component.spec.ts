@@ -1,6 +1,6 @@
 /**
  * Title: contact.component.spec.ts
- * Author: Jennifer Hoitenga
+ * Author: Michael Christman
  * Date: August 23, 2023
  * Sources Used:
  * Angular Tutorial for Beginners: How to Rename Projects video by Professor Krasso (https://youtu.be/T7ef0bOOWs4)

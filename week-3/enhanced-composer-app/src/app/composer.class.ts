@@ -19,28 +19,33 @@ export class Composer {
     this.composers = [
       {
         composerId: 100,
-        fullName: 'Danny Elfman',
-        genre: 'Contemporary Classical',
+        fullName: 'Ludwig van Beethoven',
+        genre: 'Romantic Classical',
       },
       {
         composerId: 101,
-        fullName: 'Hans Zimmer',
-        genre: 'Orchestral',
+        fullName: 'Wolfgang Amadeus Mozart',
+        genre: 'Classical',
       },
       {
         composerId: 102,
         fullName: 'John Williams',
-        genre: 'Classical',
+        genre: 'Contemporary Classical',
       },
       {
         composerId: 103,
-        fullName: 'Ludovico Einaudi',
+        fullName: 'Philip Glass',
         genre: 'Contemporary Classical',
       },
       {
         composerId: 104,
-        fullName: 'Hildur Guðnadóttir',
-        genre: 'Contemporary Classical',
+        fullName: 'Hans Zimmer',
+        genre: 'Orchestral',
+      },
+      {
+        composerId: 105,
+        fullName: 'George Frideric Handel',
+        genre: 'Baroque',
       },
     ];
   }
