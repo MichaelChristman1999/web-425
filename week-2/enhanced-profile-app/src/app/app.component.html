@@ -1,0 +1,62 @@
+<!--
+ * Title: app.component.html
+ * Author: Michael Christman
+ * Date: August 25, 2023
+  * Description: This is the main component for the profile-app assignment.
+ * Sources Used:
+ * Angular Tutorial for Beginners video by Professor Krasso
+ * Angular Tutorial - Data Binding & *ng Directives by Professor Krasso
+ * Bootstrap Grid: https://getbootstrap.com/docs/4.0/layout/grid/
+ *-->
+
+<!-- Navigation bar for site navigation links -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <!-- Active navigation link for the Home page -->
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <!-- Navigation link for the About page -->
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <!-- Navigation link for the Contact page -->
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <!-- Header section with line breaks -->
+  <br /><br />
+  <!-- Displaying the 'assignment' variable value as a heading -->
+  <h2>{{ assignment }}</h2>
+  <br /><br />
+
+  <!-- Conditional rendering based on the 'isLoggedIn' flag -->
+  <div class="row" *ngIf="isLoggedIn; else showError">
+    <!--Left Column-->
+    <div class="col-md-4">
+      <!-- Including the 'app-my-image' component to show profile image -->
+      <app-my-image></app-my-image>
+    </div>
+    <!--Right Column-->
+    <div class="col-md-6">
+      <!-- Including the 'app-my-details' component to show profile details -->
+      <app-my-details></app-my-details>
+    </div>
+  </div>
+
+  <!-- Template for rendering error message when user is not logged in -->
+  <ng-template #showError>
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Displaying an alert message for unauthorized access -->
+        <h4 class="alert alert-danger">
+          You are not authorized to view this content.
+        </h4>
+      </div>
+    </div>
+  </ng-template>
+</div>

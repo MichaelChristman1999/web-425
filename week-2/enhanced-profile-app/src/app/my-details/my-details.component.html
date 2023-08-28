@@ -1,0 +1,31 @@
+<!--
+ * Title: my-details.component.html
+ * Author: Michael Christman
+ * Date: August 25, 2023
+ * Description: This is the my-details component for the enhanced-profile-app assignment.
+ * Sources Used:
+ * Angular Tutorial for Beginners video by Professor Krasso
+ * Angular Tutorial - Data Binding & *ng Directives by Professor Krasso
+ * Bootstrap List-Group: https://getbootstrap.com/docs/4.0/components/list-group/
+ *-->
+
+<!--An unordered Bootstrap list of my details-->
+<ul class="list-group">
+  <!-- Displaying the my full name using data from the 'myProfile' object. -->
+  <li class="list-group-item">Name: {{ myProfile.fullName }}</li>
+
+  <!-- Displaying the my favorite food using data from the 'myProfile' object. -->
+  <li class="list-group-item">Favorite Food: {{ myProfile.favoriteFood }}</li>
+
+  <!-- Displaying the my favorite color using data from the 'myProfile' object. -->
+  <li class="list-group-item">Favorite Color: {{ myProfile.favoriteColor }}</li>
+
+  <!-- Displaying a list of keywords associated with the my profile. -->
+  <li class="list-group-item">
+    Keywords:
+    <!-- Using an Angular directive to iterate through the 'keywords' array within the 'myProfile' object. -->
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word }}
+    </span>
+  </li>
+</ul>
