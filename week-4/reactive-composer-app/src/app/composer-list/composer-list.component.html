@@ -1,0 +1,42 @@
+<!--
+ * Title: composer-list.component.html
+ * Author: Michael Christman
+ * Date: September 2nd, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: How to Rename Projects video by Professor Krasso (https://youtu.be/T7ef0bOOWs4)
+ * Angular Tutorial for Beginners: Classes and Interfaces video by Professor Krasso (https://youtu.be/vvXSW_Cldvg)
+ * Angular Tutorial for Beginners: How to Pass Data to Routes by Professor Krasso (https://www.youtube.com/watch?v=KTVHu4hafUs)
+ * Bootstrap: https://getbootstrap.com/docs/4.0/content/reboot/
+ *-->
+
+ <!--Creating a table to hold the composer information.-->
+<div class="row">
+  <div class="col-sm-12">
+    <!-- Create a Bootstrap table with bordered styling. -->
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <br /><br />
+        <!-- Table header row with columns for Composer ID, Full name, and Genre. -->
+        <tr>
+          <th scope="col">Composer ID</th>
+          <th scope="col">Full name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+
+      <!--Looping over the array of composers and outputting the results to a Bootstrap table.-->
+      <tbody *ngFor="let composer of composers">
+        <!-- Table row for each composer. -->
+        <tr>
+          <td scope="row">
+            <a routerLink="/composer-details/{{ composer.composerId }}">{{
+              composer.composerId
+            }}</a>
+          </td>
+          <td scope="row">{{ composer.fullName }}</td>
+          <td scope="row">{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

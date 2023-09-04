@@ -1,0 +1,29 @@
+/**
+ * Title: composer-list.component.css
+ * Author: Michael Christman
+ * Date: September 2nd, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: How to Rename Projects video by Professor Krasso (https://youtu.be/T7ef0bOOWs4)
+ * Angular Tutorial for Beginners: Classes and Interfaces video by Professor Krasso (https://youtu.be/vvXSW_Cldvg)
+ * Angular Tutorial for Beginners: How to Pass Data to Routes by Professor Krasso (https://www.youtube.com/watch?v=KTVHu4hafUs)
+ */
+
+/* Define border styles for table cells (both headers and data cells). */
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+/* Define specific styles for table header cells in bordered tables. */
+.table-bordered thead th {
+  border-color: #343a40;
+  background-color: #343a40;
+  color: white;
+}
+
+/* Styles for a text search input */
+.txtSearch {
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}
