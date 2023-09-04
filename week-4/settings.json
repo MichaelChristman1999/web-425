@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "./week-4",
+      "name": "week-4"
+    },
+    {
+      "path": "./week-4/di-composer-app",
+      "name": "di-composer-app"
+    },
+    {
+      "path": "./week-4/reactive-composer-app",
+      "name": "reactive-composer-app"
+    },
+    {
+      "path": "./week-4/enterprise-composer-app",
+      "name": "enterprise-composer-app"
+    }
+  ]
+}
