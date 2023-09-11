@@ -1,0 +1,61 @@
+<!--
+ * Title: book-list.component.html
+ * Author: Michael Christman
+ * Date: September 9, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: Navigation and Layout with Angular Material video by Professor Krasso (https://www.youtube.com/watch?v=Wif3MsDN7Pg)
+ * Angular Tutorial for Beginners: Data Tables with Angular Material video by Professor Krasso (https://www.youtube.com/watch?v=VvHoy5CtFIE)
+-->
+
+<div fxLayout="column wrap">
+  <h2 fxFlex class="green">Top 5 Favorite Books</h2>
+
+  <!-- Create a table with material styling -->
+  <table
+    style="width: 100%"
+    fxFlex
+    mat-table
+    [dataSource]="books"
+    class="mat-elevation-z8"
+  >
+    <!-- Define the table header row -->
+    <tr mat-header-row *matHeaderRowDef="header"></tr>
+    <tr mat-row *matRowDef="let row; columns: header"></tr>
+
+    <!-- Define a column for displaying ISBN -->
+    <ng-container matColumnDef="isbn">
+      <th mat-header-cell *matHeaderCellDef>ISBN</th>
+      <td mat-cell *matCellDef="let element">
+        <!-- Create a clickable link to show book details when clicked -->
+        <a class="a-link blue" (click)="showBookDetails(element.isbn)">
+          {{ element.isbn }}
+        </a>
+      </td>
+    </ng-container>
+
+    <!-- Define a column for displaying the book title -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef>Title</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.title }}
+      </td>
+    </ng-container>
+
+    <!-- Define a column for displaying the number of pages -->
+    <ng-container matColumnDef="numOfPages">
+      <th mat-header-cell *matHeaderCellDef>Number of pages</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.numOfPages }}
+      </td>
+    </ng-container>
+
+    <!-- Define a column for displaying the authors -->
+    <ng-container matColumnDef="authors">
+      <th mat-header-cell *matHeaderCellDef>Authors</th>
+      <td mat-cell *matCellDef="let element">
+        <!-- Display a comma-separated list of authors -->
+        {{ element.authors.join(", ") }}
+      </td>
+    </ng-container>
+  </table>
+</div>
