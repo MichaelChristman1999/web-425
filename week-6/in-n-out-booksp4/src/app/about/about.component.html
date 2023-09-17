@@ -1,0 +1,59 @@
+<!--
+ * Title: about.component.html
+ * Author: Michael Christman
+ * Date: September 8, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: Navigation and Layout with Angular Material video by Professor Krasso (https://www.youtube.com/watch?v=Wif3MsDN7Pg)
+-->
+
+<!-- Create a responsive layout with Angular Flex Layout -->
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <!-- Create a column layout with two sections -->
+    <div fxLayout="column">
+      <!-- Display an image of Stephen King -->
+      <div>
+        <img src="./assets/Stephen_King.jpg" />
+      </div>
+      <!-- Provide image attribution information -->
+      <div>
+        <em>
+          Photo by
+          <a
+            class="attribution-link"
+            href="https://commons.wikimedia.org/wiki/File:Jackson_shirley.jpg"
+            target="_blank"
+            >Armen</a
+          >,
+          <a
+            class="attribution-link"
+            href="https://creativecommons.org/licenses/by-sa/4.0"
+            target="_blank"
+            >CC BY-SA 4.0</a
+          >
+        </em>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <!-- Display the title "Who was Stephen King?" with blue color -->
+    <h1 class="blue">Who was Stephen King?</h1>
+    <!-- Provide a biography paragraph about Stephen King -->
+    <p>
+      Stephen Edwin King (born September 21, 1947) is an American author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels. Described as the "King of Horror",2 his books have sold more than 350 million copies as of 2006,3 and many have been adapted into films, television series, miniseries, and comic books. King has published over 65 novels/novellas, including seven under the pen name Richard Bachman, and five non-fiction books.4 He has also written approximately 200 short stories, most of which have been published in book collections.56
+
+King has received Bram Stoker Awards, World Fantasy Awards, and British Fantasy Society Awards. In 2003, the National Book Foundation awarded him the Medal for Distinguished Contribution to American Letters.7 He has also received awards for his contribution to literature for his entire bibliography, such as the 2004 World Fantasy Award for Life Achievement and the 2007 Grand Master Award from the Mystery Writers of America.8 In 2015, he was awarded with a National Medal of Arts from the U.S. National Endowment for the Arts for his contributions to literature.9
+    </p>
+    <!-- Provide attribution for the biography source -->
+    <em>
+      Biography by:
+      <a
+        class="attribution-link"
+        href="https://stephenking.com/"
+        target="_blank"
+        >StephenKing.com</a
+      >
+    </em>
+  </div>
+</div>
